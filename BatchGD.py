@@ -26,7 +26,6 @@ class BatchGD():
             slope2=-2*np.mean(y_train-y_hat)
             self.m=self.m-self.lr*slope1
             self.b=self.b-self.lr*slope2
-        print(slope1)
     def predict(self,x):
         return np.dot(x,self.m)+self.b
 
